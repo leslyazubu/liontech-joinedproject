@@ -1,21 +1,13 @@
 Pipeline{
-	agent Node 1
+	agent any
 	tools{
 	  maven "maven 3.9.9"
-	}
-	stages{
-	  stage('clonefromscm'){
-	    steps{
-	    sh "echo jenkins clone from scm"
-	    git branch: 'jan16', url: 'https://github.com/leslyazubu/liontech-joinedproject.git'
-	    }
-	  }
-      stage('maven build'){
-	    steps{
-	    sh "echo 'maven build the src'"
-	    sh "mvn install"
-	    sh "mvn clean package" 
-	    }
-	  }
-	}
-}
+    }
+    Stages{
+      stage ('clone from scm'){
+        steps{
+        sh "echo jenkins to clone from scm"
+        git branch: 'jan16', url: 'https://github.com/leslyazubu/liontech-joinedproject.git'
+        }
+    }
+} 
