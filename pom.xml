@@ -76,13 +76,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>LION TECH ACADEMY Releases Nexus Repository</name>
-	      <url>http://50.18.238.74:8081/repository/Online-bookstore-app/</url>
+	      <url>http://50.18.238.74:8081/repository/Online-bookstorewebapp/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>LION TECH ACADEMY Snapshot Nexus Repository </name>
-	      <url>http://50.18.238.74:8081/repository/Online-bookstoreapp/</url>
+	      <url>http://50.18.238.74:8081/repository/Online-bookstoreweb/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>

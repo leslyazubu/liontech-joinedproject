@@ -36,11 +36,5 @@ pipeline{
           sh "mvn deploy"
         }
       }
-
-	  stage('deploy to production'){
-        steps{
-          deploy adapters: [tomcat9(path: '', url: 'http://54.176.90.71:8009/manager/html')], contextPath: 'leslyproject', war: 'target/*.war'
-        }
-      }
 	}
 }	  
